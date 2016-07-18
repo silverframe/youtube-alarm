@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADC0A0100996AB7BA8EA76B1 /* Pods_YouTubeAlarm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0962A4C953844264E771EA2 /* Pods_YouTubeAlarm.framework */; };
+		CB3534941D3B547C005FD442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534931D3B547C005FD442 /* AppDelegate.swift */; };
+		CB3534961D3B547C005FD442 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534951D3B547C005FD442 /* ViewController.swift */; };
+		CB3534991D3B547C005FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3534971D3B547C005FD442 /* Main.storyboard */; };
+		CB35349B1D3B547C005FD442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB35349A1D3B547C005FD442 /* Assets.xcassets */; };
+		CB35349E1D3B547C005FD442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB35349C1D3B547C005FD442 /* LaunchScreen.storyboard */; };
+		CB3534A91D3B560D005FD442 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534A81D3B560D005FD442 /* Alarm.swift */; };
+		CB3534AC1D3B75D2005FD442 /* ListAlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534AB1D3B75D2005FD442 /* ListAlarmsViewController.swift */; };
+		CB3534AF1D3B7CA5005FD442 /* ListAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534AE1D3B7CA5005FD442 /* ListAlarmTableViewCell.swift */; };
+		CB3534B11D3BBD4E005FD442 /* EditAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534B01D3BBD4E005FD442 /* EditAlarmViewController.swift */; };
+		CB3534B41D3CD4E0005FD442 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3534B31D3CD4E0005FD442 /* RealmHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51BEF20F7B2996E710A63DF8 /* Pods-YouTubeAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeAlarm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeAlarm/Pods-YouTubeAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		7D5AD4B85C6558FF34AE08EB /* Pods-YouTubeAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeAlarm/Pods-YouTubeAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		CB3534901D3B547C005FD442 /* YouTubeAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3534931D3B547C005FD442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB3534951D3B547C005FD442 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		CB3534981D3B547C005FD442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB35349A1D3B547C005FD442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB35349D1D3B547C005FD442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB35349F1D3B547C005FD442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB3534A81D3B560D005FD442 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		CB3534AB1D3B75D2005FD442 /* ListAlarmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAlarmsViewController.swift; sourceTree = "<group>"; };
+		CB3534AE1D3B7CA5005FD442 /* ListAlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		CB3534B01D3BBD4E005FD442 /* EditAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAlarmViewController.swift; sourceTree = "<group>"; };
+		CB3534B31D3CD4E0005FD442 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		F0962A4C953844264E771EA2 /* Pods_YouTubeAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB35348D1D3B547C005FD442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC0A0100996AB7BA8EA76B1 /* Pods_YouTubeAlarm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB3534871D3B547C005FD442 = {
+			isa = PBXGroup;
+			children = (
+				CB3534921D3B547C005FD442 /* YouTubeAlarm */,
+				CB3534911D3B547C005FD442 /* Products */,
+				F7A6C49D136611A7EDB4C69A /* Pods */,
+				DCC23ABF0AD56CF12C8C8C0D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB3534911D3B547C005FD442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534901D3B547C005FD442 /* YouTubeAlarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB3534921D3B547C005FD442 /* YouTubeAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534B21D3CD4CA005FD442 /* Helpers */,
+				CB3534AD1D3B7C84005FD442 /* Views */,
+				CB3534AA1D3B7469005FD442 /* Controllers */,
+				CB3534A51D3B5576005FD442 /* Models */,
+				CB3534931D3B547C005FD442 /* AppDelegate.swift */,
+				CB3534971D3B547C005FD442 /* Main.storyboard */,
+				CB35349A1D3B547C005FD442 /* Assets.xcassets */,
+				CB35349C1D3B547C005FD442 /* LaunchScreen.storyboard */,
+				CB35349F1D3B547C005FD442 /* Info.plist */,
+			);
+			path = YouTubeAlarm;
+			sourceTree = "<group>";
+		};
+		CB3534A51D3B5576005FD442 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534A81D3B560D005FD442 /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB3534AA1D3B7469005FD442 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534951D3B547C005FD442 /* ViewController.swift */,
+				CB3534AB1D3B75D2005FD442 /* ListAlarmsViewController.swift */,
+				CB3534B01D3BBD4E005FD442 /* EditAlarmViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB3534AD1D3B7C84005FD442 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534AE1D3B7CA5005FD442 /* ListAlarmTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB3534B21D3CD4CA005FD442 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3534B31D3CD4E0005FD442 /* RealmHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DCC23ABF0AD56CF12C8C8C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0962A4C953844264E771EA2 /* Pods_YouTubeAlarm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7A6C49D136611A7EDB4C69A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51BEF20F7B2996E710A63DF8 /* Pods-YouTubeAlarm.debug.xcconfig */,
+				7D5AD4B85C6558FF34AE08EB /* Pods-YouTubeAlarm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB35348F1D3B547C005FD442 /* YouTubeAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3534A21D3B547C005FD442 /* Build configuration list for PBXNativeTarget "YouTubeAlarm" */;
+			buildPhases = (
+				767FFE86CCA79DC73F994CD7 /* [CP] Check Pods Manifest.lock */,
+				CB35348C1D3B547C005FD442 /* Sources */,
+				CB35348D1D3B547C005FD442 /* Frameworks */,
+				CB35348E1D3B547C005FD442 /* Resources */,
+				FC9EA9E5C4A9DEE05AC90CDF /* [CP] Embed Pods Frameworks */,
+				1626A6D732B927917D933DF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YouTubeAlarm;
+			productName = YouTubeAlarm;
+			productReference = CB3534901D3B547C005FD442 /* YouTubeAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB3534881D3B547C005FD442 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Stefanie Seah";
+				TargetAttributes = {
+					CB35348F1D3B547C005FD442 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CB35348B1D3B547C005FD442 /* Build configuration list for PBXProject "YouTubeAlarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB3534871D3B547C005FD442;
+			productRefGroup = CB3534911D3B547C005FD442 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB35348F1D3B547C005FD442 /* YouTubeAlarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB35348E1D3B547C005FD442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB35349E1D3B547C005FD442 /* LaunchScreen.storyboard in Resources */,
+				CB35349B1D3B547C005FD442 /* Assets.xcassets in Resources */,
+				CB3534991D3B547C005FD442 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1626A6D732B927917D933DF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeAlarm/Pods-YouTubeAlarm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		767FFE86CCA79DC73F994CD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC9EA9E5C4A9DEE05AC90CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeAlarm/Pods-YouTubeAlarm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB35348C1D3B547C005FD442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3534AC1D3B75D2005FD442 /* ListAlarmsViewController.swift in Sources */,
+				CB3534AF1D3B7CA5005FD442 /* ListAlarmTableViewCell.swift in Sources */,
+				CB3534961D3B547C005FD442 /* ViewController.swift in Sources */,
+				CB3534941D3B547C005FD442 /* AppDelegate.swift in Sources */,
+				CB3534B41D3CD4E0005FD442 /* RealmHelper.swift in Sources */,
+				CB3534B11D3BBD4E005FD442 /* EditAlarmViewController.swift in Sources */,
+				CB3534A91D3B560D005FD442 /* Alarm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB3534971D3B547C005FD442 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB3534981D3B547C005FD442 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB35349C1D3B547C005FD442 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB35349D1D3B547C005FD442 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB3534A01D3B547C005FD442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB3534A11D3B547C005FD442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB3534A31D3B547C005FD442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51BEF20F7B2996E710A63DF8 /* Pods-YouTubeAlarm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouTubeAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sseah.YouTubeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB3534A41D3B547C005FD442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D5AD4B85C6558FF34AE08EB /* Pods-YouTubeAlarm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YouTubeAlarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sseah.YouTubeAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB35348B1D3B547C005FD442 /* Build configuration list for PBXProject "YouTubeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3534A01D3B547C005FD442 /* Debug */,
+				CB3534A11D3B547C005FD442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3534A21D3B547C005FD442 /* Build configuration list for PBXNativeTarget "YouTubeAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3534A31D3B547C005FD442 /* Debug */,
+				CB3534A41D3B547C005FD442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB3534881D3B547C005FD442 /* Project object */;
+}

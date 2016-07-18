@@ -1,0 +1,6 @@
+framework module Pods_YouTubeAlarm {
+  umbrella header "Pods-YouTubeAlarm-umbrella.h"
+
+  export *
+  module * { export * }
+}

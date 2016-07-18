@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aBe-OF-VRV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Alarms-->
+        <scene sceneID="mDK-Tv-7I7">
+            <objects>
+                <tableViewController title="Alarms" id="Ng0-mK-9Ox" customClass="ListAlarmsViewController" customModule="YouTubeAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gt1-CA-Si2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listAlarmTableViewCell" rowHeight="60" id="ui9-hD-yhu" customClass="ListAlarmTableViewCell" customModule="YouTubeAlarm" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ui9-hD-yhu" id="p17-uU-adI">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarm Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXG-YX-P0L">
+                                            <rect key="frame" x="18" y="19" width="87" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="alarmTimeLabel" destination="oXG-YX-P0L" id="ZNK-YT-lP5"/>
+                                    <segue destination="ad9-y1-4ig" kind="show" identifier="editAlarm" id="5Hf-Xl-1HN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ng0-mK-9Ox" id="VBE-oF-Lxb"/>
+                            <outlet property="delegate" destination="Ng0-mK-9Ox" id="RJV-0F-adV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Alarms" id="Y4X-0K-DOY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dkm-fS-lU2">
+                            <connections>
+                                <segue destination="ad9-y1-4ig" kind="show" identifier="addAlarm" id="oJt-KD-BBP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZK-ec-KGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="284"/>
+        </scene>
+        <!--Edit Alarm-->
+        <scene sceneID="PrE-Sw-GcT">
+            <objects>
+                <viewController title="Edit Alarm" id="ad9-y1-4ig" customClass="EditAlarmViewController" customModule="YouTubeAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Ce-CH-3pZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ns-eu-xH3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n2Y-1q-F7v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqN-GG-QKs">
+                                <rect key="frame" x="-20" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Edit" id="n0c-Gh-ayG"/>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NHe-O4-w90">
+                                <rect key="frame" x="0.0" y="108" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="490500264.97327298">
+                                    <!--2016-07-18 02:04:24 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_SG"/>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kq3-6l-BKP">
+                                <rect key="frame" x="20" y="356" width="556" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C95-Go-lAe">
+                                <rect key="frame" x="20" y="405" width="556" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Edit Alarm" id="vBK-2p-pTz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dJ0-kp-YMH">
+                            <connections>
+                                <segue destination="ryP-cF-diD" kind="unwind" identifier="Cancel" unwindAction="unwindToListAlarmsViewController:" id="7gw-tQ-vlD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wga-fm-RAX">
+                            <connections>
+                                <segue destination="ryP-cF-diD" kind="unwind" identifier="Save" unwindAction="unwindToListAlarmsViewController:" id="6ld-8Q-68p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="alarmDescriptionTextField" destination="Kq3-6l-BKP" id="04o-qw-Dmt"/>
+                        <outlet property="alarmDescriptionTextView" destination="C95-Go-lAe" id="uXN-Jn-UeN"/>
+                        <outlet property="alarmTimePicker" destination="NHe-O4-w90" id="rRs-W7-mIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvI-8H-dNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ryP-cF-diD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2357" y="284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ulR-SM-lPI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aBe-OF-VRV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2wE-Oa-fhl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ng0-mK-9Ox" kind="relationship" relationship="rootViewController" id="2vq-fe-qfE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PX7-9P-tBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="859" y="284"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oJt-KD-BBP"/>
+    </inferredMetricsTieBreakers>
+</document>
