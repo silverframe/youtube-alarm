@@ -10,12 +10,11 @@ import Foundation
 import RealmSwift
 
 class Alarm: Object {
-//    dynamic var alarmTime: NSDate?
+    dynamic var alarmTime: NSDate?
     dynamic var alarmDescription = String()
 //    dynamic var alarmId: String = ""
 //    dynamic var selectedDay: Int = 0
-//    dynamic var alarmOn: Bool = false
-    
+    dynamic var alarmOn: Bool = false
 }
 
 

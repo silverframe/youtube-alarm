@@ -33,6 +33,14 @@ class RealmHelper {
         }
     }
     
+    static func changeAlarmState(alarmToBeUpdated: Alarm, newAlarmState: Bool) {
+        let realm = try! Realm()
+        try! realm.write() {
+        alarmToBeUpdated.alarmOn = newAlarmState
+            
+        }
+    }
+    
     static func retrieveAlarms() -> Results<Alarm> {
         let realm = try! Realm()
         return realm.objects(Alarm)

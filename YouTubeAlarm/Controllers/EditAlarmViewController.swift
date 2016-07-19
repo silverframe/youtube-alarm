@@ -33,19 +33,55 @@ class EditAlarmViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if alarm != nil {
+            self.title = "Edit Alarm"
+        } else {
+            self.title = "New Alarm"
+         }
+        
+        setUpDefault()
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let listAlarmsViewController = segue.destinationViewController as! ListAlarmsViewController
         if segue.identifier == "Save" {
             if let alarm = alarm {
                 let newAlarm = Alarm()
-                newAlarm.alarmDescription = alarmDescriptionTextField.text ?? ""
+                newAlarm.alarmDescription = getAlarmTime()
+                newAlarm.alarmTime = alarmTimePicker.date
+                newAlarm.alarmOn = false
                 RealmHelper.updateAlarm(alarm, newAlarm: newAlarm)
             } else {
                 let alarm = Alarm()
-                alarm.alarmDescription = alarmDescriptionTextField.text ?? ""
+                alarm.alarmDescription = getAlarmTime()
+                alarm.alarmTime = alarmTimePicker.date
+                alarm.alarmOn = false
                 RealmHelper.addAlarm(alarm)
             }
             listAlarmsViewController.alarms = RealmHelper.retrieveAlarms()
+        }
+    }
+    
+    func getAlarmTime() -> String{
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateStyle = NSDateFormatterStyle.NoStyle
+        return dateFormatter.stringFromDate(alarmTimePicker.date)
+        
+    }
+}
+
+extension EditAlarmViewController {
+    
+    func setUpDefault(){
+        if let alarm = alarm {
+            if let time = alarm.alarmTime {
+                alarmTimePicker.date = time
+            } else {
+                alarmTimePicker.date = NSDate()
+            }
         }
     }
 }

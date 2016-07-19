@@ -35,6 +35,8 @@ class ListAlarmsViewController: UITableViewController {
 
         cell.alarmTimeLabel.text = alarm.alarmDescription
         
+        cell.alarm = alarm
+        
         return cell 
     }
     
